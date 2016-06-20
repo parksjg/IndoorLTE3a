@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "gov.pscr.indoorlte"
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        archivesBaseName = "indoorlte-$versionName"
+    }
+    signingConfigs {
+        release {
+            storeFile file('../../keystore/pscr.release.keystore.jks')
+            keyAlias "PSCR_Keystore"
+            keyPassword "PSCRLabKeystore"
+            storePassword "PSCRLabKeystore"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'net.sf.opencsv:opencsv:2.3'
+    compile 'com.github.PhilJay:MPAndroidChart:v2.2.0'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+}

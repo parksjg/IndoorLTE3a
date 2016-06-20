@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Indoor LTE</string>
+    <string name="disclaimer_text">
+        This application was created by the PSCR lab and intended
+        for internal lab use only.\n\nThis is a beta release, with all warnings implied.
+    </string>
+    <string name="signal_excellent">Excellent</string>
+    <string name="signal_good">Good</string>
+    <string name="signal_fair">Fair</string>
+    <string name="signal_poor">Poor</string>
+    <string name="grade_label_top">Excellent</string>
+    <string name="grade_label_mid">Good</string>
+    <string name="grade_label_low">Poor</string>
+</resources>

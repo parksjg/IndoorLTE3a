@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/app_background">
+
+    <TextView
+        android:id="@+id/filenameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="Filename:"
+        android:textColor="#a0a0a0"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/filenameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filenameLabel"
+        android:layout_alignLeft="@id/filenameLabel"
+        android:layout_marginTop="-5dp"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/app_background"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/filenameValue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:id="@+id/newRecording"
+        android:layout_width="245dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_button"
+        android:text="New Recording"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:onClick="onNewRecording"
+        />
+
+    <Button
+        android:id="@+id/displayGrade"
+        android:layout_width="245dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/newRecording"
+        android:background="@drawable/rounded_button"
+        android:text="Display Grade"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:onClick="onNewRecording"
+        />
+
+</RelativeLayout>

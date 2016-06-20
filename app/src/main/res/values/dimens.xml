@@ -1,0 +1,9 @@
+<resources>
+    <item name="width_app_sidebar" type="dimen" format="float">5.0</item>
+    <item name="button_stroke_width_float" type="dimen" format="float">5.0</item>
+    <dimen name="button_stroke_width">5dp</dimen>
+    <dimen name="rounded_button">10dp</dimen>
+    <dimen name="detinfo_value_width">140dp</dimen>
+    <dimen name="detinfo_value_text_size">20sp</dimen>
+    <dimen name="detinfo_value_label_size">20sp</dimen>
+</resources>

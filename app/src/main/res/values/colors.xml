@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_background">#012f65</color>
+    <color name="app_sidebar">#ff9300</color>
+    <color name="button_stroke">#012f65</color>
+    <color name="button_stroke_sel">#ffffff</color>
+    <color name="button_start_recording">#029102</color>
+    <color name="button_pause_resume_recording">#d76100</color>
+    <color name="button_stop_recording">#c80202</color>
+    <color name="button_accept">#c80202</color>
+    <color name="detinfo_value">#8e9dfb</color>
+    <color name="detinfo_label">#bcbcbc</color>
+    <color name="grade_pie_top">#00ff00</color>
+    <color name="grade_pie_mid">#ffff00</color>
+    <color name="grade_pie_low">#ff0000</color>
+    <color name="grade_pie_text">#000000</color>
+    <color name="grade_pie_text_legend">#ffffff</color>
+    <color name="line_chart_text">#ffffff</color>
+    <color name="line_chart_text_legend">#ffffff</color>
+    <color name="line_chart_x_axis_text">#ffffff</color>
+    <color name="line_chart_y_axis_text">#ffffff</color>
+    <color name="line_chart_line_color">#ff6701</color>
+    <color name="line_chart_circle_color">#ff6701</color>
+    <color name="line_chart_circle_hole_color">#012f65</color>
+    <color name="line_chart_highlight_color">#f47575</color>
+    <color name="line_chart_value_text_color">#ffffff</color>
+</resources>

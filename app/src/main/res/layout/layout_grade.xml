@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/app_background"
+    >
+
+    <TextView
+        android:id="@+id/filenameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="Filename:"
+        android:textColor="#a0a0a0"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/filenameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filenameLabel"
+        android:layout_alignLeft="@id/filenameLabel"
+        android:layout_marginTop="-5dp"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        />
+
+     <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/chart"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/gradeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/gradeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filenameValue"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:id="@+id/gradeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="GRADE"
+            android:textSize="32sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/gradeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_toRightOf="@+id/gradeLabel"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="32sp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/newRecording"
+        android:layout_width="245dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_button"
+        android:text="New Recording"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        />
+
+    <Button
+        android:id="@+id/displayGraph"
+        android:layout_width="245dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/newRecording"
+        android:background="@drawable/rounded_button"
+        android:text="Display Line Chart"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        />
+
+</RelativeLayout>
