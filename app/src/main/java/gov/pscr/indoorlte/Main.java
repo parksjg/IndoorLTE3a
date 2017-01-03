@@ -448,38 +448,38 @@ public class Main extends Activity {
         ArrayList<String> labels = new ArrayList<String>();
         ArrayList<Integer> color = new ArrayList<>();
 
-//        if (top != 0) {
-//            entries.add(new Entry((float) topProb, 1));
-//            labels.add(getResources().getString(R.string.grade_label_top));
-//            color.add(getResources().getColor(R.color.grade_pie_top));
-//        }
-//        if (mid != 0) {
-//            entries.add(new Entry((float) midProb, 2));
-//            labels.add(getResources().getString(R.string.grade_label_mid));
-//            color.add(getResources().getColor(R.color.grade_pie_mid));
-//        }
-//        if (low != 0) {
-//            entries.add(new Entry((float) lowProb, 3));
-//            labels.add(getResources().getString(R.string.grade_label_low));
-//            color.add(getResources().getColor(R.color.grade_pie_low));
-//        }
+        if (top != 0) {
+            entries.add(new Entry((float) topProb, 1));
+            labels.add(getResources().getString(R.string.grade_label_top));
+            color.add(getResources().getColor(R.color.grade_pie_top));
+        }
+        if (mid != 0) {
+            entries.add(new Entry((float) midProb, 2));
+            labels.add(getResources().getString(R.string.grade_label_mid));
+            color.add(getResources().getColor(R.color.grade_pie_mid));
+        }
+        if (low != 0) {
+            entries.add(new Entry((float) lowProb, 3));
+            labels.add(getResources().getString(R.string.grade_label_low));
+            color.add(getResources().getColor(R.color.grade_pie_low));
+        }
 
 
 
 
 
 // Used for testing ++++++++++++++++++++++++++++++++++++++++++++++++++++
-        entries.add(new Entry((float) 13 / 30, 1));
-        labels.add(getResources().getString(R.string.grade_label_top));
-        color.add(getResources().getColor(R.color.grade_pie_top));
+        //entries.add(new Entry((float) 13 / 30, 1));
+        //labels.add(getResources().getString(R.string.grade_label_top));
+        //color.add(getResources().getColor(R.color.grade_pie_top));
 
-        entries.add(new Entry((float) 15 / 30, 2));
-        labels.add(getResources().getString(R.string.grade_label_mid));
-        color.add(getResources().getColor(R.color.grade_pie_mid));
+        //entries.add(new Entry((float) 15 / 30, 2));
+        //labels.add(getResources().getString(R.string.grade_label_mid));
+        //color.add(getResources().getColor(R.color.grade_pie_mid));
 
-        entries.add(new Entry((float) 2 / 30, 3));
-        labels.add(getResources().getString(R.string.grade_label_low));
-        color.add(getResources().getColor(R.color.grade_pie_low));
+        //entries.add(new Entry((float) 2 / 30, 3));
+        //labels.add(getResources().getString(R.string.grade_label_low));
+        //color.add(getResources().getColor(R.color.grade_pie_low));
 // Used for testing ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
